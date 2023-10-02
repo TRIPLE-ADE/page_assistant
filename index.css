@@ -3,7 +3,7 @@
 }
 
 #scene {
-    width: 200px;
+    width: 100px;
     height: 200px;
     border: none;
     padding: 0;
@@ -56,8 +56,8 @@
 #video-container {
     position: fixed;
     display: flex;
-    top: 70%;
-    left: 90%;
+    top: 75%;
+    left: 85%;
     pointer-events: none;
     transition: all 1s ease-in-out;
     transition-property: opacity, top, left;
@@ -68,19 +68,6 @@
     bottom: 10px;
 }
 
-.container {
-    position: relative;
-}
-
-#canvas {
-    width: 200px;
-    height: 200px;
-    border: none;
-    padding: 0;
-    position: absolute; /* fixed or static */
-    top: 0;
-    left: 0;
-}
 
 #video-container p {
     font-family: 'Courier New', Courier, monospace;
@@ -90,4 +77,6 @@
     margin-top: 10px;
     display: block;
     width: 200px;
+    position: absolute;
+    left: 120px;
 }
