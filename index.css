@@ -1,0 +1,93 @@
+.container {
+    position: relative;
+}
+
+#scene {
+    width: 200px;
+    height: 200px;
+    border: none;
+    padding: 0;
+    position: absolute; /* fixed or static */
+    top: 0;
+    left: 0;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#button1 {
+    background-color: #3498db;
+    color: #fff;
+}
+
+#button2 {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+#button3 {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+#button4 {
+    background-color: #f1c40f;
+    color: #000;
+}
+
+#button5 {
+    background-color: #9b59b6;
+    color: #fff;
+}
+
+#button6 {
+    background-color: #e67e22;
+    color: #fff;
+}
+
+#video-container {
+    position: fixed;
+    display: flex;
+    top: 70%;
+    left: 90%;
+    pointer-events: none;
+    transition: all 1s ease-in-out;
+    transition-property: opacity, top, left;
+}
+
+#video-container.active {
+    right: 10px;
+    bottom: 10px;
+}
+
+.container {
+    position: relative;
+}
+
+#canvas {
+    width: 200px;
+    height: 200px;
+    border: none;
+    padding: 0;
+    position: absolute; /* fixed or static */
+    top: 0;
+    left: 0;
+}
+
+#video-container p {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 14px;
+    color: #333;
+    margin-top: 10px;
+    display: block;
+    width: 200px;
+}
