@@ -1,7 +1,7 @@
 {
-  "name": "threejs_example",
+  "name": "page_assistant",
   "version": "1.0.0",
-  "description": "Install three using",
+  "description": "Assistant",
   "main": "main.js",
   "scripts": {
     "dev": "npx vite",
