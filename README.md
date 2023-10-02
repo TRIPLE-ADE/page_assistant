@@ -4,7 +4,7 @@ To get started with this project, follow these steps:
    `git clone https://`
 
 2. change directory
-   `cd nextjs-movie-app`
+   `cd page-assistant`
 
 3. Install dependencies with
    `npm install`
