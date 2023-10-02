@@ -94,17 +94,12 @@ window.addEventListener("load", function () {
 
 let timeoutId;
 const buttonExplanations = {
-  button1:
-    "Sign Up button was clicked. This button can perform a sign-up action.",
-  button2: "Login button was clicked. This button can perform a login action.",
-  button3:
-    "Learn More button was clicked. This button can provide more information.",
-  button4:
-    "Contact Us button was clicked. This button can open a contact form.",
-  button5:
-    "Explore button was clicked. This button can navigate to other sections.",
-  button6:
-    "Get Started button was clicked. This button can initiate the onboarding process.",
+    'button1': 'This is Sign Up button. It can perform a Sign up action.',
+    'button2': 'This is the Login button. It can perform a login action.',
+    'button3': 'This is the Learn More button. It can provide more information.',
+    'button4': 'This is the Contact Us button. It can open a contact form.',
+    'button5': 'This is the Explore button. It can navigate to other sections.',
+    'button6': 'This is the Get Started button. It can initiate the onboarding process.'
 };
 
 const videoContainer = document.getElementById("video-container");
@@ -150,11 +145,17 @@ Object.keys(buttonExplanations).forEach((buttonId) => {
 
     if (videoContainer.classList.contains("active")) {
       explanationElm.textContent = explanation;
+
+      if ('speechSynthesis' in window) {
+        // Add text-to-speech functionality
+        const speech = new SpeechSynthesisUtterance(explanation);
+        window.speechSynthesis.speak(speech);
+    }
     }
 
     clearTimeout(timeoutId);
 
     // Set a new timer to reset the video container and clear the text after 1 minute
-    timeoutId = setTimeout(resetVideoContainer, 5000);
+    timeoutId = setTimeout(resetVideoContainer, 7000);
   });
 });
